@@ -1,5 +1,5 @@
 SELECT 
- Prices.product_id , ROUND(SUM(price*units)* 1.0 / SUM(units),2) AS average_price
+ Prices.product_id , ROUND(SUM(price*units) / SUM(units),2) AS average_price
 FROM
  Prices 
 JOIN 
